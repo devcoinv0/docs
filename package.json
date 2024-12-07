@@ -1,0 +1,28 @@
+{
+  "name": "red-near-fin",
+  "private": true,
+  "scripts": {
+    "build": "turbo build",
+    "dev": "turbo dev",
+    "lint": "turbo lint", 
+    "clean": "turbo clean && rm -rf node_modules",
+    "cid": "pnpm clean && pnpm install && pnpm dev",
+    "format": "prettier --write \"**/*.{ts,tsx,md}\""
+  },
+  "devDependencies": {
+    "@repo/typescript": "workspace:*",
+    "@repo/eslint": "workspace:*",
+    "prettier": "^3.1.0",
+    "turbo": "latest",
+    "next": "14.2.6"
+  },
+  "packageManager": "pnpm@9.1.1",
+  "engines": {
+    "node": ">=18"
+  },
+  "workspaces": [
+    "apps/*",
+    "packages/*",
+    "tooling/*"
+  ]
+}

@@ -1,0 +1,12 @@
+{
+  "name": "@repo/icons",
+  "version": "0.0.1",
+  "main": "./index.ts",
+  "types": "./index.ts",
+  "dependencies": {
+    "lucide-react": "latest"
+  },
+  "peerDependencies": {
+    "react": "^18"
+  }
+}
